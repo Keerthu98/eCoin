@@ -46,5 +46,17 @@ public class SigninTest {
         // ...then the result should be the expected one.
         assertThat(result, is(FAKE_STRING));
     }
+    @Test
+    public void Test4() {
+
+        String result = "";
+        // ...when the string is returned from the object under test...
+        if (Signin.temporary("vicky", "admin"))
+            result = "";
+        else result="Login was successful";
+
+        // ...then the result should be the expected one.
+        assertThat(result, is(FAKE_STRING));
+    }
 
 }

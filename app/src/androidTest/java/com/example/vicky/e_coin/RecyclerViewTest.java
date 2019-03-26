@@ -25,27 +25,34 @@ public class RecyclerViewTest {
     public ActivityTestRule<Recycler> mActivityTestRule = new ActivityTestRule<>(Recycler.class);
 
     @Test
-    public void Test1(){
+    public void Test1() {
         onView(ViewMatchers.withId(R.id.recycler))
                 .perform(RecyclerViewActions.actionOnItemAtPosition(0, click()));
-
         pressBack();
+    }
 
+    @Test
+    public void Test2() {
         onView(ViewMatchers.withId(R.id.recycler))
                 .perform(RecyclerViewActions.scrollToPosition(1));
 
         onView(ViewMatchers.withId(R.id.recycler))
                 .perform(RecyclerViewActions.actionOnItemAtPosition(1, click()));
-
         pressBack();
+    }
+    @Test
+    public void Test3() {
 
         onView(ViewMatchers.withId(R.id.recycler))
                 .perform(RecyclerViewActions.scrollToPosition(2));
 
         onView(ViewMatchers.withId(R.id.recycler))
                 .perform(RecyclerViewActions.actionOnItemAtPosition(2, click()));
-
         pressBack();
+    }
+
+    @Test
+    public void Test4() {
 
         onView(ViewMatchers.withId(R.id.recycler))
                 .perform(RecyclerViewActions.scrollToPosition(3));
