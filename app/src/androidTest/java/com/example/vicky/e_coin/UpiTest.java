@@ -38,10 +38,10 @@ import android.support.test.espresso.contrib.RecyclerViewActions;
 //@LargeTest
 //@RunWith(AndroidJUnit4.class)
 public class UpiTest {
-//
-//    @Rule
-//    public ActivityTestRule<Fragmentholder> mActivityTestRule = new ActivityTestRule<>(Fragmentholder.class);
-//
+
+    @Rule
+    public ActivityTestRule<Fragmentholder> mActivityTestRule = new ActivityTestRule<>(Fragmentholder.class);
+
 //    @Before
 //    public void yourSetUPFragment() {
 //        mActivityTestRule.getActivity()
