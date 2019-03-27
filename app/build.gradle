@@ -64,6 +64,8 @@ dependencies {
         exclude module: 'recyclerview-v7'
     }
     androidTestImplementation 'androidx.test:core:1.1.0' ;
+//    implementation 'androidx.fragment:fragment:1.1.0-alpha01'
+//    debugImplementation 'androidx.fragment:fragment-testing:1.1.0-alpha01';
 
 }
 

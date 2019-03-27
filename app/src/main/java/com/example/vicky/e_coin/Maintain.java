@@ -53,7 +53,7 @@ public class Maintain extends AppCompatActivity{
         else if(y1>99 || y.equals("")){Toast.makeText(this, "Invalid year", Toast.LENGTH_SHORT).show();}
         else if(cv1>999 || cv.equals("")){Toast.makeText(this, "Invalid CVV", Toast.LENGTH_SHORT).show();}
         else{flag = flag+1;}
-        if(flag==5){Toast.makeText(this, "Card accepted / added", Toast.LENGTH_SHORT).show();}else{Toast.makeText(this, "Card Denied", Toast.LENGTH_SHORT).show();}
+        if(flag==1){Toast.makeText(this, "Card accepted / added", Toast.LENGTH_SHORT).show();}else{Toast.makeText(this, "Card Denied", Toast.LENGTH_SHORT).show();}
     }
 
     public void validatedetails(View view){
